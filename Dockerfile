@@ -9,7 +9,7 @@ RUN apt-get update \
 COPY letsencrypt.sh run.sh config.sh /
 RUN chmod +x /run.sh /letsencrypt.sh
 
-VOLUME ["/letsencrypt", "/dns"]
+VOLUME ["/letsencrypt"]
 
 ENTRYPOINT ["/bin/bash"]
 CMD ["/run.sh"]

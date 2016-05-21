@@ -42,8 +42,8 @@ the update. See the documentation for
 [letsencrypt.sh](https://github.com/lukas2511/letsencrypt.sh) for details
 on the arguments it takes.
 
-The container expects an executable at `/dns/hook`, and exposes the 
-`/dns` volume for you to mount.
+The container expects an executable at `/dns/hook`, so you'll need to
+mount the `/dns` folder or `/dns/hook` file when running the container.
 
 ### Other configuration
 

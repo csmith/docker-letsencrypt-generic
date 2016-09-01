@@ -6,7 +6,7 @@ RUN apt-get update \
       curl \
       inotify-tools
 
-COPY letsencrypt.sh run.sh config.sh /
+COPY letsencrypt.sh run.sh config /
 RUN chmod +x /run.sh /letsencrypt.sh
 
 VOLUME ["/letsencrypt"]

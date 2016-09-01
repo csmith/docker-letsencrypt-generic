@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+WELLKNOWN=/letsencrypt
 BASEDIR=/letsencrypt
 CONTACT_EMAIL=$EMAIL
 KEY_ALGO=secp384r1

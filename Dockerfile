@@ -1,13 +1,13 @@
 FROM ubuntu:xenial 
-MAINTAINER Chris Smith <chris87@gmail.com> 
+MAINTAINER Chris Smith <dle@chameth.com> 
 
 RUN apt-get update \
  && apt-get install -y \
       curl \
       inotify-tools
 
-COPY letsencrypt.sh run.sh config /
-RUN chmod +x /run.sh /letsencrypt.sh
+COPY dehydrated run.sh config /
+RUN chmod +x /run.sh /dehydrated
 
 VOLUME ["/letsencrypt"]
 

@@ -1,6 +1,6 @@
 # Let's Encrypt Generic DNS Service
 
-This container uses [letsencrypt.sh](https://github.com/lukas2511/letsencrypt.sh)
+This container uses [dehydrated](https://github.com/lukas2511/dehydrated)
 to automatically obtain SSL certs from [Let's Encrypt](https://letsencrypt.org/).
 
 You need to provide a hook that will perform DNS updates on your domains.
@@ -39,7 +39,7 @@ automatically applied.
 To verify that you own the domain, a TXT record needs to be automatically
 created for it. For this container, you must provide a hook that can do
 the update. See the documentation for
-[letsencrypt.sh](https://github.com/lukas2511/letsencrypt.sh) for details
+[dehydrated](https://github.com/lukas2511/dehydrated) for details
 on the arguments it takes.
 
 The container expects an executable at `/dns/hook`, so you'll need to

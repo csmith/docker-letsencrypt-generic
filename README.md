@@ -55,6 +55,10 @@ You should pass in a contact e-mail address by setting the `EMAIL` env var.
 This is passed on to Let's Encrypt, and may be used for important service
 announcements.
 
+By default this container uses Eliptic Curve keys. You can override this
+behaviour by setting the `ALGORITHM` environment variable. Dehydrated
+supports the following algorithms: `rsa`, `prime256v1` and `secp384r1`.
+
 ### Running
 
 Here's a full worked example:

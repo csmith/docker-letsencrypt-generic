@@ -5,7 +5,7 @@ to automatically obtain SSL certs from [Let's Encrypt](https://letsencrypt.org/)
 
 You need to provide a hook that will perform DNS updates on your domains.
 If you use a cloud DNS provider, you're probably better off using
-[letsencrypt-lexicon](https://github.com/csmith/letsencrypt-lexicon).
+[letsencrypt-lexicon](https://github.com/csmith/docker-letsencrypt-lexicon).
 
 Multiple domains, as well as SANs, are supported. Certificates will be
 renewed automatically, and obtained automatically as soon as new domains

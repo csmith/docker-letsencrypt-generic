@@ -15,7 +15,7 @@ else
 fi
 
 while true; do
-  $DEHYDRATED_CMD --cron --hook /dns/hook --challenge dns-01
+  $DEHYDRATED_CMD --cron --keep-going --hook /dns/hook --challenge dns-01
   $DEHYDRATED_CMD --cleanup
   inotifywait --timeout 86400 /letsencrypt/domains.txt
   sleep 60
